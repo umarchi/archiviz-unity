@@ -10,11 +10,13 @@ public class OpenDoor : MonoBehaviour
   private void OnTriggerEnter(Collider other)
   {
     Rotateobj.transfoerm.RotateAround(new Vector3(1.45f, 0.0f, 5.6f), Vector3.up, 90);
+    // params of Vector3 are axis of Hinge of the door
   }
   
-  private void OnTriggerExit(zcollider other)
+  private void OnTriggerExit(collider other)
   {
     RotateOZbj.transform.RotateAround(new Vector3(1.45f, 0.0f, 5.6f), Vector3.up, -90);
+    // params of Vector3 are axis of Hinge of the door
   
     // Start is called before the first frame update
     void Start()
