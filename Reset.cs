@@ -18,6 +18,7 @@ public class Reset : MonoBehaviour
         if (Input.GetKey(Keycode.Space))
         {
             transform.position = new Vector3(0.0f, 3.0f, 0.0f);
+            // vars of Vector3 is the point of respawn
         }
     }
 }
