@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ArrowPlay : MonoBehaviour
 {
+    public float speed = 0.02f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +16,7 @@ public class ArrowPlay : MonoBehaviour
     void Update()
     {
        float x = Input.GetAxis("Horizontal");
-       float y = Input.GetAxis("Vertical");
+       float z = Input.GetAxis("Vertical");
        transform.Traslate(x * speed, 0.0f, z * speed);
     }
 }
