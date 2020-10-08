@@ -17,6 +17,6 @@ public class ArrowPlay : MonoBehaviour
     {
        float x = Input.GetAxis("Horizontal");
        float z = Input.GetAxis("Vertical");
-       transform.Traslate(x * speed, 0.0f, z * speed);
+       transform.Translate(x * speed, 0.0f, z * speed);
     }
 }
